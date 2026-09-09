@@ -13,5 +13,6 @@ const noBtn = document.getElementById("noBtn");
 
 noBtn.addEventListener("click", () => {
   noBtn.innerText = "Yes 💖";
-  alert("You have no other option 😘");
+  alert("Haha, tujhe kya laga naa bolne dunga 😜");
 });
+
