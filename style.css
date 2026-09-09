@@ -24,6 +24,19 @@ h2 {
   margin-top: 40px;
 }
 
+.photo-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.photo-row img {
+  width: 40%;
+  border: 5px solid #fff;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
 button {
   background: linear-gradient(135deg, #ff758c, #ff7eb3);
   color: white;

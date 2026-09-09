@@ -11,9 +11,7 @@ window.onclick = (event) => { if (event.target == modal) modal.style.display = "
 const yesBtn = document.getElementById("yesBtn");
 const noBtn = document.getElementById("noBtn");
 
-noBtn.addEventListener("mouseover", () => {
-  noBtn.innerText = "Yes 💖";
-});
 noBtn.addEventListener("click", () => {
   noBtn.innerText = "Yes 💖";
+  alert("You have no other option 😘");
 });
