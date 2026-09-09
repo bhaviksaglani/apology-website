@@ -32,9 +32,9 @@ h2 {
 }
 
 .photo-row img, .video-row video {
-  width: 40%;
-  height: 250px; /* reduced height for aesthetic look */
-  object-fit: cover;
+  width: 40%;          /* each takes 40% of row */
+  height: 250px;       /* fixed height for aesthetic balance */
+  object-fit: cover;   /* ensures image/video fills the box neatly */
   border: 5px solid #fff;
   border-radius: 15px;
   box-shadow: 0 6px 20px rgba(0,0,0,0.2);
