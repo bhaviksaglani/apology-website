@@ -32,13 +32,15 @@ h2 {
 }
 
 .photo-row img, .video-row video {
-  width: 40%;          /* each takes 40% of row */
-  height: 250px;       /* fixed height for aesthetic balance */
-  object-fit: cover;   /* ensures image/video fills the box neatly */
+  width: 40%;             /* each takes 40% of row */
+  height: 250px;          /* fixed height for balance */
+  object-fit: contain;    /* show the entire photo/video without cropping */
+  background-color: #000; /* adds black bars if aspect ratio doesn’t match */
   border: 5px solid #fff;
   border-radius: 15px;
   box-shadow: 0 6px 20px rgba(0,0,0,0.2);
 }
+
 
 button {
   background: linear-gradient(135deg, #ff758c, #ff7eb3);
