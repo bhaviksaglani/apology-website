@@ -9,18 +9,15 @@
 </head>
 <body>
   <div class="container">
-    <!-- Personalized Note -->
+    <!-- Letter Icon -->
     <section class="note">
       <h1>My Love, I’m Sorry ❤️</h1>
-      <p id="personalNote">
-        I forgot our anniversary, but you mean the world to me. Please forgive me.
-      </p>
+      <button id="openNote" class="letterBtn">💌 Open My Letter</button>
     </section>
 
     <!-- Photos & Videos -->
     <section class="media">
       <h2>Our Memories</h2>
-      <!-- Make sure these files exist in your assets folder -->
       <img src="assets/photo1.jpg" alt="Cute memory 1">
       <img src="assets/photo2.jpg" alt="Cute memory 2">
       <video controls>
@@ -29,10 +26,11 @@
       </video>
     </section>
 
-    <!-- Forgiveness Button -->
+    <!-- Forgiveness Buttons -->
     <section class="forgiveness">
       <h2>Do you forgive me?</h2>
-      <button id="forgiveBtn">No</button>
+      <button id="yesBtn">Yes 💖</button>
+      <button id="noBtn">No</button>
     </section>
 
     <!-- Date Ideas -->
@@ -46,10 +44,27 @@
     </section>
   </div>
 
-  <!-- Background Music -->
-  <audio autoplay loop>
-    <source src="assets/music.mp3" type="audio/mp3">
-  </audio>
+  <!-- Hidden Note Modal -->
+  <div id="noteModal" class="modal">
+    <div class="modal-content">
+      <span id="closeNote" class="close">&times;</span>
+      <h2>My Letter to You 💌</h2>
+      <p>
+        I know i forgot our anniversary but excuse nai dunga.  
+        Idk if kisi ne kiya ya nai maine kabhi kisi ke liye nai banaya,  
+        i always want to make you feel special in whichever way is possible but still try my best.  
+        You mean the world to me, you are annoying sometimes but i loved getting annoyed by you.  
+        I love how you become like a child in front of me, i love the way you take care of me, i love how you pamper me.  
+        I love everything about you.  
+        You are the best thing happened to me and i want to get annoyed for the rest of my life with you.  
+        I know sometimes i am pain in the ass but thankyou mujhe jhelne.  
+        I love you the most, i hope this at least brings up a smile on your face.  
+        Ik i forget things, i am not able to give you or act like or plan like you want but trust me i am trying.  
+        I wanna make you the happiest, that’s my goal.  
+        I love you my jaan ❤️
+      </p>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>

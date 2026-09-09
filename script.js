@@ -1,11 +1,19 @@
-// Forgiveness Button Logic with animation
-const btn = document.getElementById("forgiveBtn");
-btn.addEventListener("click", () => {
-  btn.innerText = "Yes 💖";
-  btn.style.background = "linear-gradient(135deg, #a1ffce, #faffd1)";
-  btn.style.color = "#333";
-  btn.style.transform = "scale(1.2)";
-  setTimeout(() => {
-    btn.style.transform = "scale(1)";
-  }, 500);
+// Modal logic
+const modal = document.getElementById("noteModal");
+const openBtn = document.getElementById("openNote");
+const closeBtn = document.getElementById("closeNote");
+
+openBtn.onclick = () => { modal.style.display = "block"; };
+closeBtn.onclick = () => { modal.style.display = "none"; };
+window.onclick = (event) => { if (event.target == modal) modal.style.display = "none"; };
+
+// Forgiveness buttons
+const yesBtn = document.getElementById("yesBtn");
+const noBtn = document.getElementById("noBtn");
+
+noBtn.addEventListener("mouseover", () => {
+  noBtn.innerText = "Yes 💖";
+});
+noBtn.addEventListener("click", () => {
+  noBtn.innerText = "Yes 💖";
 });
