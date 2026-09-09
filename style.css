@@ -24,14 +24,17 @@ h2 {
   margin-top: 40px;
 }
 
-.photo-row {
+.photo-row, .video-row {
   display: flex;
   justify-content: center;
   gap: 20px;
+  margin-top: 20px;
 }
 
-.photo-row img {
+.photo-row img, .video-row video {
   width: 40%;
+  height: 250px; /* reduced height for aesthetic look */
+  object-fit: cover;
   border: 5px solid #fff;
   border-radius: 15px;
   box-shadow: 0 6px 20px rgba(0,0,0,0.2);
@@ -85,4 +88,25 @@ button:hover {
 .letterBtn {
   font-size: 1.2em;
   background: linear-gradient(135deg, #ff9a9e, #fecfef);
+}
+.custom-choice {
+  margin-top: 20px;
+}
+
+.custom-choice input {
+  padding: 12px;
+  width: 60%;
+  border: 2px solid #ff7eb3;
+  border-radius: 25px;
+  font-size: 1em;
+  margin-top: 10px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.custom-choice button {
+  margin-top: 15px;
+  background: linear-gradient(135deg, #ff9a9e, #fecfef);
+  color: #333;
+  font-weight: 600;
 }
