@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <title>Forgive Me ❤️</title>
   <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="container">
@@ -11,7 +13,6 @@
     <section class="note">
       <h1>My Love, I’m Sorry ❤️</h1>
       <p id="personalNote">
-        <!-- Replace this with your personalized note -->
         I forgot our anniversary, but you mean the world to me. Please forgive me.
       </p>
     </section>
@@ -19,10 +20,12 @@
     <!-- Photos & Videos -->
     <section class="media">
       <h2>Our Memories</h2>
-      <img src="C:\Users\BHAVIK\Projects\apology-website\assets\WhatsApp Image 2026-09-09 at 5.14.24 AM.jpeg" alt="Cute memory">
-      <img src="assets\WhatsApp Video 2026-09-09 at 5.14.29 AM.mp4" alt="Cute memory">
+      <!-- Make sure these files exist in your assets folder -->
+      <img src="assets/photo1.jpg" alt="Cute memory 1">
+      <img src="assets/photo2.jpg" alt="Cute memory 2">
       <video controls>
         <source src="assets/video1.mp4" type="video/mp4">
+        Your browser does not support video.
       </video>
     </section>
 
@@ -36,13 +39,17 @@
     <section class="dates">
       <h2>Choose Our Next Date 💕</h2>
       <form action="https://formspree.io/f/xrpgoreo" method="POST">
-  <button name="date" value="Uttan Sunset">🌅 Bike to Uttan & Watch Sunset</button>
-  <button name="date" value="Roam & Eat">🍴 Roam & Dinner</button>
-  <button name="date" value="Movie Date">🎬 Movie Date</button>
-</form>
-
+        <button name="date" value="Uttan Sunset">🌅 Bike to Uttan & Watch Sunset</button>
+        <button name="date" value="Roam & Eat">🍴 Roam & Dinner</button>
+        <button name="date" value="Movie Date">🎬 Movie Date</button>
+      </form>
     </section>
   </div>
+
+  <!-- Background Music -->
+  <audio autoplay loop>
+    <source src="assets/music.mp3" type="audio/mp3">
+  </audio>
 
   <script src="script.js"></script>
 </body>
